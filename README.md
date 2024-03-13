@@ -1,1 +1,1 @@
-# Golden_Age_of_Video_Games
+# Analyzing Video Game Data Through SQL
