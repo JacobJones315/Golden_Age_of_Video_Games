@@ -13,12 +13,12 @@
 * Overall, the Golden age of gaming appears to from the late 90's through the 2000's. With around 175 million games sold in 2008.
 
 # Procedure
-* First, I started by selecting the the top 10 games sold in this period filtering by games sold in descending order.
-* Next, I performed a left join on my games_sold and reviews data tables in order to visualize the critic and user reviews by year.
-* Next, I wanted to determine how many out of my top 400 games did not have critic scores attached to them. I determined there was only 31/400, less than 8% which I was happy with.
-* Next, I created a table of the TOP 10 years by average critic reviews. (top_critic_years)
-* Next, I created a seperate table of the TOP 10 years by average critic reviews in which the year had more than 4 games reviewed. This was done in order to get out the years where only a couple games were reviewed.(top_critic_years_more_than_four_games)
-* Next, I wanted to determine which years fell out of my top_critic_years table when looking at my top_critic_years_more_than_four_games table, to determine if their was a significant difference. I utilized a sub query to filter out the years that were not present in my top_critic_years_more_than_four_games table. Only 3 years remained in my table with more than 4 games reviewed.
-* Next, I created a seperate table lookin at the Top 10 games by year for average user/player score in years with more than 4 games released. (top_user_years_more_than_four_games)
-* Next, I wanted to determin which years did both critics and users agree were great years. Using set theory I perfomed an intersection between my two tables top_critic_years_more_than_four_games and top_user_years_more_than_four_games to see the years that were included in both tables. Three years were agreed on.
-* Finally, I wanted to see the sum of games sold in each of these three years, I utilized my query from the previous step as a subquery in my final query. I selected year and sum of games sold ordering by total games sold in descending order for years that were in my previous query to find the golden age of gaming.  
+* Top 10 Games Selection: Started by identifying the top 10 best-selling games within a specific period, sorting them by sales volume in descending order.
+* Visualizing Reviews: Conducted a left join between the tables containing game sales and reviews data to visualize both critic and user reviews by game over the years.
+* Critic Score Analysis: Investigated the presence of critic scores for the top 400 games. Found that only 31 out of 400 games lacked critic scores, accounting for less than 8%, indicating satisfactory data coverage.
+* Top Years by Critic Reviews: Created a table showcasing the top 10 years based on average critic reviews.
+* Refining Critic Reviews Analysis: Developed a separate table focusing on the top 10 years with more than four games reviewed, filtering out years with limited data to ensure robust analysis (top_critic_years_more_than_four_games).
+* Comparative Analysis: Utilized a subquery to compare the top years from the general critic reviews table with the refined table, identifying any significant deviations. Only three years remained in the refined table.
+* Top Years by User Scores: Established a separate table highlighting the top 10 years for average user scores, specifically in years with more than four games released (top_user_years_more_than_four_games).
+* Consensus Analysis: Employed set theory more specifically table intersection to identify the years where both critics and users agreed on exceptional gaming experiences, resulting in three mutually agreed-upon years.
+* Sales Volume Examination: Finally, assessed the total games sold in each of the three agreed-upon years. Utilized the previous query as a subquery to extract the sum of games sold per year, providing insight into the golden age of gaming.
