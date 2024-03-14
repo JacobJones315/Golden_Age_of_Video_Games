@@ -10,4 +10,15 @@
 * The Top 10 years ranked by average critic score with atleast 4 games reviewed from highest to lowest: 1998, 2004, 2002, 1999, 2001, 2011, 2016, 2013, 2008, and 2017.
 * The Top 10 years ranked by user/player score from highest to lowest: 1997, 1998, 2010, 2009, 2008, 1996, 2005, 2006, 2002, and 2000.
 * The only years where both citics and players agreed were 1998, 2002, and 2008.
-* Overall, the Golden age of gaming appears to from the late 90's through the 2000's. 
+* Overall, the Golden age of gaming appears to from the late 90's through the 2000's. With around 175 million games sold in 2008.
+
+# Procedure
+* First, I started by selecting the the top 10 games sold in this period filtering by games sold in descending order.
+* Next, I performed a left join on my games_sold and reviews data tables in order to visualize the critic and user reviews by year.
+* Next, I wanted to determine how many out of my top 400 games did not have critic scores attached to them. I determined there was only 31/400, less than 8% which I was happy with.
+* Next, I created a table of the TOP 10 years by average critic reviews. (top_critic_years)
+* Next, I created a seperate table of the TOP 10 years by average critic reviews in which the year had more than 4 games reviewed. This was done in order to get out the years where only a couple games were reviewed.(top_critic_years_more_than_four_games)
+* Next, I wanted to determine which years fell out of my top_critic_years table when looking at my top_critic_years_more_than_four_games table, to determine if their was a significant difference. I utilized a sub query to filter out the years that were not present in my top_critic_years_more_than_four_games table. Only 3 years remained in my table with more than 4 games reviewed.
+* Next, I created a seperate table lookin at the Top 10 games by year for average user/player score in years with more than 4 games released. (top_user_years_more_than_four_games)
+* Next, I wanted to determin which years did both critics and users agree were great years. Using set theory I perfomed an intersection between my two tables top_critic_years_more_than_four_games and top_user_years_more_than_four_games to see the years that were included in both tables. Three years were agreed on.
+* Finally, I wanted to see the sum of games sold in each of these three years, I utilized my query from the previous step as a subquery in my final query. I selected year and sum of games sold ordering by total games sold in descending order for years that were in my previous query to find the golden age of gaming.  
