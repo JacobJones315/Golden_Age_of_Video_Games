@@ -3,7 +3,7 @@
 * Video games have exploded into a massive industry, with forecasts suggesting the global gaming market will exceed $300 billion by 2027, according to Mordor Intelligence. With such substantial financial stakes, major game publishers are highly incentivized to produce the next blockbuster. However, amidst this fierce competition, one crucial question persists: Are games improving, or have we already experienced the pinnacle of video gaming's golden era?
 * In this analysis I explored video game data from 1977-2020 by utilizing advanced SQL techniques such as table joins, filtering, set theory, and subqueries to delve deep into the history of video games. The original data tables game_sales and game_reviews included over 13,000 games but was reduced to focus on the top 400 best selling videogames over this time period.
 
-* Determing the golden age of video games is very subjective depending on what your genre of choice is and how you want to look at the data. I decided to be as unbiased as posible and stricly looked at data collected from critic scores, user/player scores, and games sold during the year the game launched. As we all know how critics score video games and how players score video games can vary greatley, I had to take this into account. 
+* Determining the golden age of video games remains a subjective endeavor, heavily influenced by individual preferences and analytical approaches. To mitigate bias, I adopted a methodology relying solely on objective data sourced from critic scores, user/player ratings, and sales figures corresponding to each game's launch year. Acknowledging the substantial disparity between how critics and players assess games, I ensured a balanced assessment, recognizing the nuanced perspectives inherent in each evaluation metric.
 
 # Summary
 * Wii Sports, Super Mario Bros. for NES, and Counter-Strike: Global Offensive for PC claim the top three spots on our list for games sold during our testing period.
@@ -13,7 +13,7 @@
 * Overall, the Golden age of gaming appears to from the late 90's through the 2000's. With around 175 million games sold in 2008.
 
 # Procedure
-* Top 10 Games Selection: Started by identifying the top 10 best-selling games within a specific period, sorting them by sales volume in descending order.
+* Top 10 Games Selection: Started by identifying the top 10 best-selling games within our specified period, sorting them by sales volume in descending order.
 * Visualizing Reviews: Conducted a left join between the tables containing game sales and reviews data to visualize both critic and user reviews by game over the years.
 * Critic Score Analysis: Investigated the presence of critic scores for the top 400 games. Found that only 31 out of 400 games lacked critic scores, accounting for less than 8%, indicating satisfactory data coverage.
 * Top Years by Critic Reviews: Created a table showcasing the top 10 years based on average critic reviews.
