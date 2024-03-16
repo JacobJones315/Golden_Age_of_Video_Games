@@ -52,5 +52,8 @@
 ![](/Images/Sales_in_the_Golden_Years_of_Gaming.png)
 
 
+## Libraries Used
+* [ipython-sql](https://pypi.org/project/ipython-sql/)
+* [psycopg2](https://pypi.org/project/psycopg2/)
 
 
