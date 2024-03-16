@@ -23,4 +23,34 @@
 * Consensus Analysis: Employed set theory more specifically table intersection to identify the years where both critics and users agreed on exceptional gaming experiences, resulting in three mutually agreed-upon years.
 * Sales Volume Examination: Finally, assessed the total games sold in each of the three agreed-upon years. Utilized the previous query as a subquery to extract the sum of games sold per year, providing insight into the golden age of gaming.
 
-![](/images/reviews_table1.png)
+## Screenshots of Tables Generated Using SQL
+![](/Images/reviews_table1.png)
+
+
+![](/Images/Sales_Table1.png)
+
+
+![](/Images/top_critic_years.png)
+
+
+![](/Images/top_critic_years_more_than_four_games.png)
+
+
+![](/Images/Years_that_dropped_off_critics_favorites_list.png)
+
+
+![](/Images/top_user_years_more_than_four_games.png)
+
+
+
+![](/Images/Years_both_players_and_critics_loved.png)
+
+
+
+
+
+![](/Images/Sales_in_the_Golden_Years_of_Gaming.png)
+
+
+
+
