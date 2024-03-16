@@ -22,3 +22,5 @@
 * Top Years by User Scores: Established a separate table highlighting the top 10 years for average user scores, specifically in years with more than four games released (top_user_years_more_than_four_games).
 * Consensus Analysis: Employed set theory more specifically table intersection to identify the years where both critics and users agreed on exceptional gaming experiences, resulting in three mutually agreed-upon years.
 * Sales Volume Examination: Finally, assessed the total games sold in each of the three agreed-upon years. Utilized the previous query as a subquery to extract the sum of games sold per year, providing insight into the golden age of gaming.
+
+![](/images/reviews_table1.png)
