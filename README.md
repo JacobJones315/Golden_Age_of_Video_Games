@@ -15,7 +15,7 @@
 # Procedure
 * Top 10 Games Selection: Started by identifying the top 10 best-selling games within our specified period, sorting them by sales volume in descending order.
 * Visualizing Reviews: Conducted a left join between the tables containing game sales and reviews data to visualize both critic and user reviews by game over the years.
-* Critic Score Analysis: Investigated the presence of critic scores for the top 400 games. Found that only 31 out of 400 games lacked critic scores, accounting for less than 8%, indicating satisfactory data coverage.
+* Critic Score Analysis: Investigated the presence of critic scores for the top 400 games. Found that only 31 out of 400 games lacked critic and user scores, accounting for less than 8%, indicating satisfactory data coverage.
 * Top Years by Critic Reviews: Created a table showcasing the top 10 years based on average critic reviews.
 * Refining Critic Reviews Analysis: Developed a separate table focusing on the top 10 years with more than four games reviewed, filtering out years with limited data to ensure robust analysis (top_critic_years_more_than_four_games).
 * Comparative Analysis: Utilized a subquery to compare the top years from the general critic reviews table with the refined table, identifying any significant deviations. Only three years remained in the refined table.
